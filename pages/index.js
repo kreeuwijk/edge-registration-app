@@ -88,7 +88,7 @@ export default function Form({ applianceId }) {
       <span className="accent">{name}</span> appliance registration!
       </h1>
       <p className={styles.description}>
-        Register the appliance with a CRM project
+        Register the Edge appliance with a datacenter
         {/* <code className={styles.code}>pages/no-js-from.js</code> */}
       </p>
 
