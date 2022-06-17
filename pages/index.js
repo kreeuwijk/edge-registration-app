@@ -120,17 +120,11 @@ export default function Form({ applianceId }) {
         <label htmlFor="crmProject">{selectionLabel}</label>
         <select id="store" name="store" required>
           <option value="edge-dwx-a1;62a74addd13e4a23b1ece588">
-            Datacenter A1, NL
+            Datacenter A - 1 profile, NL
           </option>
-          <option value="edge-dwx-b1;62a74addd13e4a23b1ece588">
-            Datacenter B1, NL
+          <option value="edge-dwx-b1;62a74addd13e4a23b1ece588,62a8918bd13e4b3925f4e23a">
+            Datacenter B - 2 profiles, NL
           </option>
-          // <option value="edge-dwx-a;62a8918bd13e4b3925f4e23a,62a74addd13e4a23b1ece588">
-          //   Datacenter A, NL
-          // </option>
-          // <option value="edge-dwx-b;62a8918bd13e4b3925f4e23a,62a74addd13e4a23b1ece588">
-          //   Datacenter B, NL
-          // </option>
         </select>
 
         <button type="submit" disabled={isSubmitting}>
