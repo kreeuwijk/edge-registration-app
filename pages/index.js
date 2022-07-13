@@ -119,6 +119,9 @@ export default function Form({ applianceId }) {
         </div>
         <label htmlFor="crmProject">{selectionLabel}</label>
         <select id="store" name="store" required>
+          <option value="edge-london;628ce30a7c90b5915b37a802,628ce30a7c90b591598ef64c">
+            London, UK - Regent St
+          </option>
           <option value="edge-pittsburgh;628ce30a7c90b5915b37a802,628ce30a7c90b591598ef64c">
             Pittsburgh, PA - Penguin St
           </option>
@@ -136,6 +139,9 @@ export default function Form({ applianceId }) {
           </option>
           <option value="edge-dallas;62753e05f245ae150c1a3c65,62753eadf245ae15ae76a4cb">
             Dallas, TX - BBQ St
+          </option>
+          <option value="edge-milwaukee;62a96c6f4575048ec4495496,62a97922457504988e543a7a">
+            Milwaukee, WI - Edge Stores
           </option>
           <option value="edge-sanjose;627a4962f245b23834eb4766,61a904fa66f466f67dd86cf3">
             San Jose, Ca - Hopper St
