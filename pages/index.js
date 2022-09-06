@@ -119,14 +119,11 @@ export default function Form({ applianceId }) {
         </div>
         <label htmlFor="crmProject">{selectionLabel}</label>
         <select id="store" name="store" required>
-          <option value="edge-dwx-a1;62a74addd13e4a23b1ece588">
-            Datacenter A - K3S basic, NL
+          <option value="edge-dwx-a1;6317104c3708d2c47644107a">
+            Datacenter A - Ubuntu Edge with Portworx, NL
           </option>
-          <option value="edge-dwx-b1;62a74addd13e4a23b1ece588,62a8918bd13e4b3925f4e23a">
-            Datacenter B - K3S + Add-On, NL
-          </option>
-          <option value="edge-dwx-c1;62ce8732b8042bf13a09db36">
-            Datacenter C - RKE2 basic, NL
+          <option value="edge-dwx-c1;631745143708d2fa2183ad88">
+            Datacenter B - Ubuntu K3s with Portworx, NL
           </option>
         </select>
 

@@ -29,6 +29,7 @@ export async function createCluster(c: Client, projectUid: string, clusterName: 
       name: clusterName,
       labels: {
         imported: "false",
+        latlng: "52.041823867203604, 4.651942042817065",
       }
     },
     spec: {}
@@ -60,6 +61,7 @@ export default async function handler(req, res) {
   const scApi = process.env.SC_API
   const scUser = process.env.SC_USER
   const scPassword = process.env.SC_PASSWORD
+  const scProjectName = process.env.SC_PROJECT_NAME || "Default"
 
   console.log("New request: ", appliance, crmProject)
 
@@ -68,8 +70,8 @@ export default async function handler(req, res) {
   }
 
   const c = new Client(scApi, scUser, scPassword);
-  // const kubeconfig = await getKubeconfigFromSpectroCloud(c, "Default", "vmware-prod-2");
-  const projectUid = await c.getProjectUID("Default");
+  // const kubeconfig = await getKubeconfigFromSpectroCloud(c, scProjectName, "vmware-prod-2");
+  const projectUid = await c.getProjectUID(scProjectName);
   const alreadyExists = await doesEdgeApplianceExist(c, projectUid, appliance);
   if (alreadyExists) {
     console.log("It already exists! - ");
