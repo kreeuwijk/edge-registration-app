@@ -122,7 +122,7 @@ export default function Form({ applianceId }) {
           <option value="edge-dwx-a1;6317104c3708d2c47644107a">
             Datacenter A - Ubuntu Edge with Portworx, NL
           </option>
-          <option value="edge-dwx-c1;631745143708d2fa2183ad88">
+          <option value="edge-dwx-b1;631745143708d2fa2183ad88">
             Datacenter B - Ubuntu K3s with Portworx, NL
           </option>
         </select>
